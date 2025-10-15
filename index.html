@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USA Fueling & Charging Heatmap · Tesla Superchargers vs Shell Gas Stations</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <h1>USA Fueling & Charging Heatmap</h1>
+  <p>Tesla Superchargers vs Shell Gas Stations — dual heatmap layers with custom gradients</p>
+  </header>
+
+  <div id="controls">
+    <label class="switch"><input type="checkbox" id="toggleTesla" checked /> Show Tesla Superchargers</label>
+    <label class="switch"><input type="checkbox" id="toggleShell" checked /> Show Shell Gas Stations</label>
+  </div>
+
+  <main>
+    <div id="map" role="region" aria-label="EV Charging Heatmap"></div>
+  </main>
+
+  <footer>
+    <span>Author: Purna Saud</span> ·
+    <span>Portfolio Project — Google Maps JavaScript API (Heatmap)</span>
+  </footer>
+
+  <script src="shellStations.js"></script>
+  <script src="teslaStations.js"></script>
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhQV22r1woSETQbGBOTDRdVrZjJvLXaNs&libraries=visualization&callback=initMap"></script>
+</body>
+</html>
